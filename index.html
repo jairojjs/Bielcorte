@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: linear-gradient(to right,white,red,white,blue,white,red);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+    <h1>Barbearia Biel do Corte</h1>
+  <h2>Agende-Se aqui</Agende-SE></h2>
+
+  <form action="https://api.sheetmonkey.io/form/uJiGbsf75KmDQEdpTR3RWr" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="telefone">telefone:</label>
+    <input type="telefone" id="lelefone" name="lelefone" required>
+
+    <label for="data-agendamento">Data do Agendamento:</label>
+        <input type="date" id="data-agendamento" name="data-agendamento" required>
+
+        <!-- Campo Horário do Agendamento -->
+        <label for="horario-agendamento">Horário do Agendamento:</label>
+        <input type="time" id="horario-agendamento" name="horario-agendamento" required>
+
+    <label for="servico">Serviço:</label>
+    <select id="servico" name="servico" required>
+      <option value="corte">Corte Social  =12,00</option>
+      <option value="Corte + luzes">Corte + luzes  =15,00</option>
+      <option value="Degradê">Degradê  =15,00</option>
+      <option value="Pamentação">Pamentação  =25,00</option>
+      <option value="Reflex alinhamento">Reflex alinhamento  =30,00</option>
+      <option value="Platinado">Platinado  =30,00</option>
+      <option value="Barba">Barba  =10,00</option>
+    </select>
+
+    <button type="submit">Agendar</button>
+  </form>
+
+</body>
+</html>
